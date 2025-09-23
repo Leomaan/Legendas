@@ -3,7 +3,7 @@ import os
 import re
 
 pasta_zip = r"C:\Users\Leoman\Desktop\Legendas\Legendas"
-pasta_srt = r"C:\Users\Leoman\Desktop\Legendas\Legendas\legendasextraidas"
+pasta_srt = r"C:\Users\Leoman\Desktop\Legendas\Legendas\test"
 
 padrao = re.compile(r"(.*?)[\.\s\(\[]*(\d{4})[\)\]]*")
 
