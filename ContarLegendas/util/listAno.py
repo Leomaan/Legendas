@@ -21,7 +21,7 @@ for nome_zip in os.listdir(pasta_zips):
                 nome_limpo = nome_zip[:fim_ano_index].strip()
                 arquivos_por_ano[ano].append(nome_limpo)
         else:
-            print(f"⚠️ Ano não encontrado no nome: {nome_zip}")
+            print(f"Ano não encontrado no nome: {nome_zip}")
 
 # Juntar todos os nomes limpos em uma lista única
 todos_os_arquivos = []
@@ -29,8 +29,8 @@ for ano in sorted(arquivos_por_ano):
     todos_os_arquivos.extend(arquivos_por_ano[ano])
 
 # Mostrar todos os nomes dos arquivos em sequência
-print(f"\n🗂️ Arquivos entre {ano_min} e {ano_max}:")
+print(f"\nArquivos entre {ano_min} e {ano_max}:")
 for nome in todos_os_arquivos:
     print(nome)
 
-print(f"\n🧮 Total de arquivos: {len(todos_os_arquivos)}")
+print(f"\nTotal de arquivos: {len(todos_os_arquivos)}")
